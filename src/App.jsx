@@ -1,15 +1,57 @@
 import React from "react";
 import "./App.css";
 
+//WEB3
+import "@rainbow-me/rainbowkit/styles.css";
+import {
+  getDefaultWallets,
+  RainbowKitProvider,
+  darkTheme
+} from "@rainbow-me/rainbowkit";
+import { configureChains, createConfig, WagmiConfig } from "wagmi";
+import {
+  mainnet,
+  polygon,
+  optimism,
+  arbitrum,
+  zora,
+} from "wagmi/chains";
+import { publicProvider } from "wagmi/providers/public";
+
+
 //Components
 import { NavBar } from "./components/NavBar/main.jsx";
 
+
+
 function App() {
+
+  const { chains, publicClient } = configureChains(
+    [mainnet, polygon, optimism, arbitrum, zora],
+    [
+      publicProvider()
+    ]
+  );
+
+  const { connectors } = getDefaultWallets({
+    appName: "My RainbowKit App",
+    projectId: "YOUR_PROJECT_ID",
+    chains
+  });
+
+  const wagmiConfig = createConfig({
+    autoConnect: true,
+    connectors,
+    publicClient
+  });
+
   return (
-    <div>
-      <NavBar />
-      <h1>Hello!</h1>
-    </div>
+    <WagmiConfig config={wagmiConfig}>
+      <RainbowKitProvider chains={chains} theme={darkTheme()}>
+        <NavBar />
+      </RainbowKitProvider>
+    </WagmiConfig>
+
   );
 }
 
