@@ -21,7 +21,7 @@ import { publicProvider } from "wagmi/providers/public";
 
 //Components
 import { NavBar } from "./components/NavBar/main.jsx";
-
+import { Home } from "./components/Home/Home.jsx";
 
 
 function App() {
@@ -47,8 +47,9 @@ function App() {
 
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains} theme={darkTheme()}>
+      <RainbowKitProvider coolMode chains={chains} theme={darkTheme()}>
         <NavBar />
+        <Home />
       </RainbowKitProvider>
     </WagmiConfig>
 
