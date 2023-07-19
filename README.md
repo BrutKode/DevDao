@@ -1,4 +1,4 @@
-## Developer Dao
+## Developer Dao NFT
 
 - Hire developers to work for you!
 - Truly trustless payment by using solidity and ethereum!
