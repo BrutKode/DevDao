@@ -55,7 +55,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<NavBar />}>
                   <Route index element={<Home />} />
-
                 </Route>
               </Routes>
             </BrowserRouter>
