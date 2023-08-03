@@ -51,13 +51,8 @@ function App() {
     return (
         <WagmiConfig config={wagmiConfig}>
           <RainbowKitProvider coolMode chains={chains} theme={darkTheme()}>
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<NavBar />}>
-                  <Route index element={<Home />} />
-                </Route>
-              </Routes>
-            </BrowserRouter>
+            <NavBar />
+            <Home />
           </RainbowKitProvider>
         </WagmiConfig>
 
