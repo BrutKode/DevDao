@@ -2,7 +2,6 @@
   "name": "developer-dao",
   "private": false,
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,9 +10,12 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
     "@popperjs/core": "^2.11.8",
     "@rainbow-me/rainbowkit": "^1.0.6",
+    "@truffle/hdwallet-provider": "^2.1.13",
     "bootstrap": "^5.3.0",
+    "dotenv": "^16.3.1",
     "husky": "^8.0.3",
     "iron-session": "^6.3.1",
     "react": "^18.2.0",
