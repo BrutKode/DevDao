@@ -13,11 +13,11 @@ import {
 } from "@rainbow-me/rainbowkit";
 import { configureChains, createConfig, WagmiConfig } from "wagmi";
 import {
-    mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    zora,
+    goerli,
+    sepolia,
+    avalancheFuji,
+    fantomTestnet,
+    localhost
 } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
@@ -25,12 +25,12 @@ import { publicProvider } from "wagmi/providers/public";
 //Components
 import { NavBar } from "./components/NavBar/main.jsx";
 import { Home } from "./components/Home/Home.jsx";
-
+import { NFT } from "./components/NFT/main.jsx";
 
 function App() {
 
     const { chains, publicClient } = configureChains(
-        [mainnet, polygon, optimism, arbitrum, zora],
+        [goerli, sepolia, avalancheFuji, fantomTestnet, localhost],
         [
             publicProvider()
         ]
@@ -53,6 +53,7 @@ function App() {
           <RainbowKitProvider coolMode chains={chains} theme={darkTheme()}>
             <NavBar />
             <Home />
+            <NFT />
           </RainbowKitProvider>
         </WagmiConfig>
 
