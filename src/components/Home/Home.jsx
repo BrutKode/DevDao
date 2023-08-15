@@ -1,5 +1,6 @@
 import React from "react";
 import { useAccount, useSignMessage } from "wagmi";
+import { NFT } from "../NFT/main.jsx";
 
 export const Home = () => {
   const { address } = useAccount();
@@ -14,6 +15,7 @@ export const Home = () => {
       </button>
       {isSuccess && <div>Signature: {data}</div>}
       {isError && <div>Error signing message</div>}
+      <NFT address />
     </div>
   );
 };

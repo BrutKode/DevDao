@@ -25,7 +25,6 @@ import { publicProvider } from "wagmi/providers/public";
 //Components
 import { NavBar } from "./components/NavBar/main.jsx";
 import { Home } from "./components/Home/Home.jsx";
-import { NFT } from "./components/NFT/main.jsx";
 
 function App() {
 
@@ -53,7 +52,6 @@ function App() {
           <RainbowKitProvider coolMode chains={chains} theme={darkTheme()}>
             <NavBar />
             <Home />
-            <NFT />
           </RainbowKitProvider>
         </WagmiConfig>
 
