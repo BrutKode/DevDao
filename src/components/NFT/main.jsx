@@ -1,6 +1,6 @@
 import React from "react";
 import NiftyBuild from "../../../backend/build/contracts/Nifty";
-import { serialize, useAccount, useContractRead, usePrepareContractWrite, useContractWrite } from "wagmi";
+import { serialize, useAccount, useContractReads, usePrepareContractWrite, useContractWrite } from "wagmi";
 
 export const NFT = () => {
     const { address } = useAccount();
@@ -26,6 +26,8 @@ export const NFT = () => {
     //})
     //const { data, write } = useContractWrite(config)
 
+    let userId = 1;
+
     const { data, isError, isLoading } = useContractReads({
         contracts: [
             {
@@ -36,16 +38,44 @@ export const NFT = () => {
             {
                 ...NiftyContract,
                 functionName: 'tokenURI',
-                args: [1],
+                args: [userId],
+            },
+            {
+                ...NiftyContract,
+                functionName: 'userTokenIDs',
+                args: [address],
             },
         ],
     });
+
+    if(!isLoading) {
+        for (let i = 0; i < data[2].result.length; i++) {
+            console.log(data[2].result[i]);
+        }
+    }
 
     return (
         <>
           <p>Contract Deployed To: {contractAddr}</p>
           { !isLoading &&
-            <p>The user possesses: { data.toString() } NFTs</p>
+            <div>
+              <p>The user possesses: { data[0].result.toString() } NFTs</p>
+              {() => {
+                  data[2].result.shift();
+                  data[2].result.map((idx,i) => {
+                  userId = data[2].result[idx];
+                  return (
+                      <div>
+                        <img alt="NFT Photo" src={ data[1].result.toString() } style={{
+                            height: "200px",
+                            width: "200px"
+                        }}></img>
+                        <p>The Token Id is { i }</p>
+                      </div>
+                  );
+                  })}}
+              <p>The token IDs are: { data[2].result.toString() }</p>
+            </div>
           }
           {isError && <div>Error: {isError}</div>}
         </>
