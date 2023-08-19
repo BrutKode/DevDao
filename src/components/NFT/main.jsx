@@ -48,33 +48,27 @@ export const NFT = () => {
         ],
     });
 
-    if(!isLoading) {
-        for (let i = 0; i < data[2].result.length; i++) {
-            console.log(data[2].result[i]);
-        }
-    }
-
     return (
         <>
           <p>Contract Deployed To: {contractAddr}</p>
           { !isLoading &&
             <div>
               <p>The user possesses: { data[0].result.toString() } NFTs</p>
-              {() => {
-                  data[2].result.shift();
-                  data[2].result.map((idx,i) => {
-                  userId = data[2].result[idx];
-                  return (
-                      <div>
-                        <img alt="NFT Photo" src={ data[1].result.toString() } style={{
-                            height: "200px",
-                            width: "200px"
-                        }}></img>
-                        <p>The Token Id is { i }</p>
-                      </div>
-                  );
-                  })}}
-              <p>The token IDs are: { data[2].result.toString() }</p>
+              <div className="container text-center">
+                <div className="row">
+                  {data[2].result.map((idx,i) => {
+                      userId = data[2].result[idx];
+                      return (
+                          <div className="card md-3" style={{width: "18rem"}}>
+                            <img className="card-img-top" alt="NFT Photo" src={ data[1].result.toString() }></img>
+                            <div className="card-body">
+                              <p className="card-text">The Token Id is { idx.toString() }</p>
+                            </div>
+                          </div>
+                      );
+                  })}
+                </div>
+              </div>
             </div>
           }
           {isError && <div>Error: {isError}</div>}
