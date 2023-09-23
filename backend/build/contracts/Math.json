@@ -14,9 +14,7 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/utils/math/Math.sol",
     "exportedSymbols": {
-      "Math": [
-        2570
-      ]
+      "Math": [2570]
     },
     "id": 2571,
     "license": "MIT",
@@ -24,12 +22,7 @@
     "nodes": [
       {
         "id": 1706,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "103:23:9"
       },
@@ -46,9 +39,7 @@
         },
         "fullyImplemented": true,
         "id": 2570,
-        "linearizedBaseContracts": [
-          2570
-        ],
+        "linearizedBaseContracts": [2570],
         "name": "Math",
         "nameLocation": "210:4:9",
         "nodeType": "ContractDefinition",
@@ -1135,9 +1126,7 @@
                   "src": "1775:4099:9",
                   "statements": [
                     {
-                      "assignments": [
-                        1808
-                      ],
+                      "assignments": [1808],
                       "declarations": [
                         {
                           "constant": false,
@@ -1172,9 +1161,7 @@
                       "src": "2096:13:9"
                     },
                     {
-                      "assignments": [
-                        1811
-                      ],
+                      "assignments": [1811],
                       "declarations": [
                         {
                           "constant": false,
@@ -1607,10 +1594,7 @@
                           "id": 1823,
                           "name": "require",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            4294967278,
-                            4294967278
-                          ],
+                          "overloadedDeclarations": [4294967278, 4294967278],
                           "referencedDeclaration": 4294967278,
                           "src": "2952:7:9",
                           "typeDescriptions": {
@@ -1638,9 +1622,7 @@
                       "src": "2952:53:9"
                     },
                     {
-                      "assignments": [
-                        1831
-                      ],
+                      "assignments": [1831],
                       "declarations": [
                         {
                           "constant": false,
@@ -1883,9 +1865,7 @@
                       "src": "3292:300:9"
                     },
                     {
-                      "assignments": [
-                        1835
-                      ],
+                      "assignments": [1835],
                       "declarations": [
                         {
                           "constant": false,
@@ -2309,9 +2289,7 @@
                       "src": "4397:21:9"
                     },
                     {
-                      "assignments": [
-                        1852
-                      ],
+                      "assignments": [1852],
                       "declarations": [
                         {
                           "constant": false,
@@ -3326,9 +3304,7 @@
               "src": "6122:189:9",
               "statements": [
                 {
-                  "assignments": [
-                    1934
-                  ],
+                  "assignments": [1934],
                   "declarations": [
                     {
                       "constant": false,
@@ -3416,10 +3392,7 @@
                       "id": 1935,
                       "name": "mulDiv",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        1918,
-                        1962
-                      ],
+                      "overloadedDeclarations": [1918, 1962],
                       "referencedDeclaration": 1918,
                       "src": "6149:6:9",
                       "typeDescriptions": {
@@ -3975,9 +3948,7 @@
                   }
                 },
                 {
-                  "assignments": [
-                    1978
-                  ],
+                  "assignments": [1978],
                   "declarations": [
                     {
                       "constant": false,
@@ -4073,10 +4044,7 @@
                               "id": 1980,
                               "name": "log2",
                               "nodeType": "Identifier",
-                              "overloadedDeclarations": [
-                                2242,
-                                2278
-                              ],
+                              "overloadedDeclarations": [2242, 2278],
                               "referencedDeclaration": 2242,
                               "src": "7344:4:9",
                               "typeDescriptions": {
@@ -5425,9 +5393,7 @@
                   "src": "8358:145:9",
                   "statements": [
                     {
-                      "assignments": [
-                        2086
-                      ],
+                      "assignments": [2086],
                       "declarations": [
                         {
                           "constant": false,
@@ -5483,10 +5449,7 @@
                           "id": 2087,
                           "name": "sqrt",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            2074,
-                            2110
-                          ],
+                          "overloadedDeclarations": [2074, 2110],
                           "referencedDeclaration": 2074,
                           "src": "8399:4:9",
                           "typeDescriptions": {
@@ -5888,9 +5851,7 @@
               "src": "8694:922:9",
               "statements": [
                 {
-                  "assignments": [
-                    2119
-                  ],
+                  "assignments": [2119],
                   "declarations": [
                     {
                       "constant": false,
@@ -7507,9 +7468,7 @@
                   "src": "9859:149:9",
                   "statements": [
                     {
-                      "assignments": [
-                        2254
-                      ],
+                      "assignments": [2254],
                       "declarations": [
                         {
                           "constant": false,
@@ -7565,10 +7524,7 @@
                           "id": 2255,
                           "name": "log2",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            2242,
-                            2278
-                          ],
+                          "overloadedDeclarations": [2242, 2278],
                           "referencedDeclaration": 2242,
                           "src": "9900:4:9",
                           "typeDescriptions": {
@@ -7974,9 +7930,7 @@
               "src": "10201:854:9",
               "statements": [
                 {
-                  "assignments": [
-                    2287
-                  ],
+                  "assignments": [2287],
                   "declarations": [
                     {
                       "constant": false,
@@ -9611,9 +9565,7 @@
                   "src": "11300:151:9",
                   "statements": [
                     {
-                      "assignments": [
-                        2419
-                      ],
+                      "assignments": [2419],
                       "declarations": [
                         {
                           "constant": false,
@@ -9669,10 +9621,7 @@
                           "id": 2420,
                           "name": "log10",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            2407,
-                            2443
-                          ],
+                          "overloadedDeclarations": [2407, 2443],
                           "referencedDeclaration": 2407,
                           "src": "11341:5:9",
                           "typeDescriptions": {
@@ -10078,9 +10027,7 @@
               "src": "11771:600:9",
               "statements": [
                 {
-                  "assignments": [
-                    2452
-                  ],
+                  "assignments": [2452],
                   "declarations": [
                     {
                       "constant": false,
@@ -11139,9 +11086,7 @@
                   "src": "12618:158:9",
                   "statements": [
                     {
-                      "assignments": [
-                        2542
-                      ],
+                      "assignments": [2542],
                       "declarations": [
                         {
                           "constant": false,
@@ -11197,10 +11142,7 @@
                           "id": 2543,
                           "name": "log256",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            2530,
-                            2569
-                          ],
+                          "overloadedDeclarations": [2530, 2569],
                           "referencedDeclaration": 2530,
                           "src": "12659:6:9",
                           "typeDescriptions": {
@@ -11663,7 +11605,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-08-19T15:06:18.879Z",
+  "updatedAt": "2023-09-05T12:09:12.551Z",
   "devdoc": {
     "details": "Standard math utilities missing in the Solidity language.",
     "kind": "dev",

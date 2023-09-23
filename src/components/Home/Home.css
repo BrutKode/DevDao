@@ -1,0 +1,19 @@
+.cusButton {
+    color: #ff1493;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    margin: 5px;
+}
+
+.cusButton:hover {
+    margin: 10px;
+    box-shadow: 0 0 5px  #ff1493,
+                0 0 25px  #ff1493,
+                0 0 50px  #ff1493,
+                0 0 200px  #ff1493;
+}
+
+.index {
+    width: 250px;
+}

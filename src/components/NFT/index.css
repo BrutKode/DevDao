@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.cusCard {
+    transition: 0.5s;
+    margin: 5px;
+    width: 18rem;
+    background: linear-gradient(45deg, rgba(150,150,255,0.8), rgba(255,150,150,0.8));
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.cusCard p {
+    padding: 15px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.cusCard:hover {
+    margin: 10px;
+    color: #050801;
+    box-shadow: 50px 50px 25px rgba(255, 255, 255, 0.2);
+}
+
+.NFT-box {
+    height: 500px;
+    width: 1000px;
+    margin: 100px;
+}

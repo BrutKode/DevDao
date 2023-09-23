@@ -1,6 +1,6 @@
 // File: @openzeppelin/contracts/utils/introspection/IERC165.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)
 
 pragma solidity ^0.8.0;
@@ -28,7 +28,7 @@ interface IERC165 {
 
 // File: @openzeppelin/contracts/token/ERC721/IERC721.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts (last updated v4.9.0) (token/ERC721/IERC721.sol)
 
 pragma solidity ^0.8.0;
@@ -161,7 +161,7 @@ interface IERC721 is IERC165 {
 
 // File: @openzeppelin/contracts/token/ERC721/IERC721Receiver.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts (last updated v4.6.0) (token/ERC721/IERC721Receiver.sol)
 
 pragma solidity ^0.8.0;
@@ -191,7 +191,7 @@ interface IERC721Receiver {
 
 // File: @openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts v4.4.1 (token/ERC721/extensions/IERC721Metadata.sol)
 
 pragma solidity ^0.8.0;
@@ -219,7 +219,7 @@ interface IERC721Metadata is IERC721 {
 
 // File: @openzeppelin/contracts/utils/Address.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/Address.sol)
 
 pragma solidity ^0.8.1;
@@ -466,7 +466,7 @@ library Address {
 
 // File: @openzeppelin/contracts/utils/Context.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts v4.4.1 (utils/Context.sol)
 
 pragma solidity ^0.8.0;
@@ -493,7 +493,7 @@ abstract contract Context {
 
 // File: @openzeppelin/contracts/utils/math/Math.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/math/Math.sol)
 
 pragma solidity ^0.8.0;
@@ -835,7 +835,7 @@ library Math {
 
 // File: @openzeppelin/contracts/utils/math/SignedMath.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts (last updated v4.8.0) (utils/math/SignedMath.sol)
 
 pragma solidity ^0.8.0;
@@ -881,7 +881,7 @@ library SignedMath {
 
 // File: @openzeppelin/contracts/utils/Strings.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts (last updated v4.9.0) (utils/Strings.sol)
 
 pragma solidity ^0.8.0;
@@ -967,7 +967,7 @@ library Strings {
 
 // File: @openzeppelin/contracts/utils/introspection/ERC165.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts v4.4.1 (utils/introspection/ERC165.sol)
 
 pragma solidity ^0.8.0;
@@ -997,7 +997,7 @@ abstract contract ERC165 is IERC165 {
 
 // File: @openzeppelin/contracts/token/ERC721/ERC721.sol
 
-// random text
+//  Random Text
 // OpenZeppelin Contracts (last updated v4.9.0) (token/ERC721/ERC721.sol)
 
 pragma solidity ^0.8.0;
@@ -1469,31 +1469,25 @@ pragma solidity 0.8.8;
 
 contract Nifty is ERC721 {
     
-    uint256 lastTokenID;
+    uint256 lasTokenID;
     mapping(address => uint[]) tokenIDs;
-    mapping(uint => bool) priority;
 
-    string high_priority = "https://i.imgur.com/l0p3lBa.jpeg";
-    string low_priority = "https://i.imgur.com/oWbiR8V.jpeg";
+    string uri = "https://images2.imgbox.com/5b/02/QcxHUb5V_o.png";
 
     constructor() ERC721("Nifty", "NFT") {}
 
-    function mint(bool prioritee) external {
-        uint newTokenId = lastTokenID += 1;
-        priority[newTokenId] = prioritee;
+    function mint() external {
+        uint newTokenId = lasTokenID += 1;
         tokenIDs[msg.sender].push(newTokenId);
         _mint(msg.sender, newTokenId);
     }
 
-    function tokenURI(uint tokenId) public view override returns(string memory) {
-        if(priority[tokenId]) {
-            return high_priority;
-        } else {
-            return low_priority;
-        }
+    function tokenURI(uint _tokenId) public view override returns(string memory) {
+        return uri;
     }
 
     function userTokenIDs(address hodler) public view returns (uint[] memory) {
         return(tokenIDs[hodler]);
     }
+
 }

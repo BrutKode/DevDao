@@ -14,15 +14,9 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/utils/Strings.sol",
     "exportedSymbols": {
-      "Math": [
-        2570
-      ],
-      "SignedMath": [
-        2675
-      ],
-      "Strings": [
-        1668
-      ]
+      "Math": [2570],
+      "SignedMath": [2675],
+      "Strings": [1668]
     },
     "id": 1669,
     "license": "MIT",
@@ -30,12 +24,7 @@
     "nodes": [
       {
         "id": 1441,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "101:23:6"
       },
@@ -76,9 +65,7 @@
         },
         "fullyImplemented": true,
         "id": 1668,
-        "linearizedBaseContracts": [
-          1668
-        ],
+        "linearizedBaseContracts": [1668],
         "name": "Strings",
         "nameLocation": "228:7:6",
         "nodeType": "ContractDefinition",
@@ -181,9 +168,7 @@
                   "src": "528:609:6",
                   "statements": [
                     {
-                      "assignments": [
-                        1459
-                      ],
+                      "assignments": [1459],
                       "declarations": [
                         {
                           "constant": false,
@@ -315,9 +300,7 @@
                       "src": "552:38:6"
                     },
                     {
-                      "assignments": [
-                        1468
-                      ],
+                      "assignments": [1468],
                       "declarations": [
                         {
                           "constant": false,
@@ -411,9 +394,7 @@
                       "src": "604:41:6"
                     },
                     {
-                      "assignments": [
-                        1475
-                      ],
+                      "assignments": [1475],
                       "declarations": [
                         {
                           "constant": false,
@@ -1078,10 +1059,7 @@
                               "id": 1516,
                               "name": "toString",
                               "nodeType": "Identifier",
-                              "overloadedDeclarations": [
-                                1498,
-                                1526
-                              ],
+                              "overloadedDeclarations": [1498, 1526],
                               "referencedDeclaration": 1498,
                               "src": "1376:8:6",
                               "typeDescriptions": {
@@ -1430,11 +1408,7 @@
                           "id": 1534,
                           "name": "toHexString",
                           "nodeType": "Identifier",
-                          "overloadedDeclarations": [
-                            1546,
-                            1622,
-                            1642
-                          ],
+                          "overloadedDeclarations": [1546, 1622, 1642],
                           "referencedDeclaration": 1622,
                           "src": "1636:11:6",
                           "typeDescriptions": {
@@ -1560,9 +1534,7 @@
               "src": "1908:347:6",
               "statements": [
                 {
-                  "assignments": [
-                    1557
-                  ],
+                  "assignments": [1557],
                   "declarations": [
                     {
                       "constant": false,
@@ -2105,9 +2077,7 @@
                   },
                   "id": 1608,
                   "initializationExpression": {
-                    "assignments": [
-                      1580
-                    ],
+                    "assignments": [1580],
                     "declarations": [
                       {
                         "constant": false,
@@ -2336,10 +2306,7 @@
                       "id": 1609,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "2162:7:6",
                       "typeDescriptions": {
@@ -2680,11 +2647,7 @@
                       "id": 1630,
                       "name": "toHexString",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        1546,
-                        1622,
-                        1642
-                      ],
+                      "overloadedDeclarations": [1546, 1622, 1642],
                       "referencedDeclaration": 1622,
                       "src": "2497:11:6",
                       "typeDescriptions": {
@@ -3146,7 +3109,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-08-19T15:06:18.869Z",
+  "updatedAt": "2023-09-05T12:09:12.484Z",
   "devdoc": {
     "details": "String operations.",
     "kind": "dev",

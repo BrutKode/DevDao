@@ -300,12 +300,8 @@
   "ast": {
     "absolutePath": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
     "exportedSymbols": {
-      "IERC165": [
-        1704
-      ],
-      "IERC721": [
-        1042
-      ]
+      "IERC165": [1704],
+      "IERC721": [1042]
     },
     "id": 1043,
     "license": "MIT",
@@ -313,12 +309,7 @@
     "nodes": [
       {
         "id": 928,
-        "literals": [
-          "solidity",
-          "^",
-          "0.8",
-          ".0"
-        ],
+        "literals": ["solidity", "^", "0.8", ".0"],
         "nodeType": "PragmaDirective",
         "src": "108:23:1"
       },
@@ -360,10 +351,7 @@
         },
         "fullyImplemented": false,
         "id": 1042,
-        "linearizedBaseContracts": [
-          1042,
-          1704
-        ],
+        "linearizedBaseContracts": [1042, 1704],
         "name": "IERC721",
         "nameLocation": "260:7:1",
         "nodeType": "ContractDefinition",
@@ -1647,7 +1635,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.14",
-  "updatedAt": "2023-08-19T15:06:18.771Z",
+  "updatedAt": "2023-09-05T12:09:12.477Z",
   "devdoc": {
     "details": "Required interface of an ERC721 compliant contract.",
     "events": {
